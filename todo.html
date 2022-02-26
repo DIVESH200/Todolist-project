@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      min-width: 250px;
+      background-color: #8946A6;
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    ul li {
+      cursor: pointer;
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      list-style-type: none;
+      background: #eee;
+      font-size: 18px;
+      transition: 0.2s;
+
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+
+    ul li:nth-child(odd) {
+      background: #f9f9f9;
+    }
+
+
+    ul li:hover {
+      background: #ddd;
+    }
+
+
+    ul li.checked {
+      background: #888;
+      color: #fff;
+      text-decoration: line-through;
+    }
+
+
+    ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+
+
+    .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 16px 12px 16px;
+    }
+
+    .close:hover {
+      background-color: #B762C1;
+      color: white;
+    }
+
+
+    .header {
+      background-color: #B762C1;
+      padding: 30px 40px;
+      color: white;
+      text-align: center;
+
+    }
+
+
+    .header:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    input {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      width: 75%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;
+    }
+
+
+    .addBtn {
+      padding: 10px;
+      width: 25%;
+      background: #d9d9d9;
+      color: #555;
+      float: left;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 0;
+    }
+
+    .addBtn:hover {
+      background-color: #bbb;
+    }
+
+    .right {
+      width: 70%;
+      float: right;
+      height: 700px;
+      background-color: #8946A6;
+      border: rgb(90, 84, 84) solid 2px;
+    }
+
+    .Header {
+      background-color: #B762C1;
+      text-align: center;
+      font-size: 30px;
+      border: rgb(90, 84, 84) solid 2px;
+    }
+
+    .left {
+      width: 30%;
+      float: left;
+      background-color: #8946A6;
+      height: 700px;
+      border: rgb(90, 84, 84) solid 2px;
+    }
+
+    .panim {
+      margin-top: 10px;
+      margin-left: 2px;
+      width: 200px;
+      margin-bottom: 5px;
+    }
+
+    .button {
+      border: none;
+      color: white;
+
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 2px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #FFFAF0;
+      width: 50%;
+      text-align: center;
+
+    }
+
+    .button1:hover {
+      background-color: #D3D3D3;
+      color: blue;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #FFFAF0;
+      width: 50%
+    }
+
+    .button2:hover {
+      background-color: #D3D3D3;
+      color: blue;
+    }
+
+    .button3 {
+      background-color: white;
+      color: black;
+      border: 2px solid #FFFAF0;
+      width: 50%;
+      text-align: center;
+    }
+
+    .button3:hover {
+      background-color: #D3D3D3;
+      color: blue;
+    }
+
+    .button4 {
+      background-color: white;
+      color: black;
+      border: 2px solid #FFFAF0;
+      width: 50%;
+      text-align: center;
+    }
+
+    .button4:hover {
+      background-color: #D3D3D3;
+      color: blue;
+    }
+
+    .addbn
+    { font-size: 16px;
+      width:200px;
+      height: 40px;
+    }
+  </style>
+</head>
+<h2 style="margin:5px  " class="Header">TODO</h2>
+
+<body>
+  <sec class="left">
+    <CENTER>
+      <img src="../img/OIP (1).jpg" alt="Hello user" class="panim">
+      <h2> Welcome to TODO</h2>
+      <a href="todo.html"><button class="button button1" , img src="img_snow.jpg" ;>
+          <br>
+          <h4>My Day</h4>
+        </button></a>
+      <br>
+      <a href="todo.html"><button class="button button2">
+          <h4>Important</h4>
+        </button></a>
+      <br>
+      <a href="todo.html"><button class="button button3">
+          <h4>Planned</h4>
+        </button></a>
+      <br>
+      <a href="todo.html"><button class="button button4">
+          <h4>Assigned to me</h4>
+        </button></a>
+        <br>
+      <a href="todo.html"><button class="button button3">
+          <h4>Planned</h4>
+        </button></a>
+      <br>
+    </CENTER>
+  </sec>
+  <sec class="right">
+    <div id="myDIV" class="header">
+      <h2 style="margin:5px">Tasks</h2>
+      <input type="text" id="myInput" placeholder="Title...">
+      <button class="addbn">Add</button>
+    </div>
+
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+  </sec>
+</body>
+
+</html>
